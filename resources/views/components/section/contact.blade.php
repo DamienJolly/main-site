@@ -38,7 +38,7 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="bg-white rounded-3xl shadow-2xl p-8 -mt-38 z-20">
+    <div class="bg-white rounded-3xl shadow-2xl p-8 md:-mt-38 z-20">
       <form class="space-y-6">
         <div>
           <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
