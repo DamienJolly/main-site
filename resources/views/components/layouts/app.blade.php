@@ -5,51 +5,140 @@
 <x-layouts.base {{ $attributes }}>
 
 
-  <!-- Top Bar -->
-  <div class="bg-gray-100 text-sm z-10 border-b border-gray-200">
+  <!-- Desktop Top Bar -->
+  <div class="hidden md:block bg-gray-100 text-sm border-b border-gray-200 z-20">
     <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
       <!-- Left: Contact Info -->
       <div class="flex flex-wrap gap-6 items-center">
-        <span class="flex items-center gap-2"><x-lucide-phone class="w-5 h-5" /> (123) 456-7890</span>
-        <span class="flex items-center gap-2"><x-lucide-clock class="w-5 h-5" /> Mon - Fri: 9:00 - 19:00 / Closed on
-          Weekends</span>
-        <span class="flex items-center gap-2"><x-lucide-mail class="w-5 h-5" /> info@spicnspan.com</span>
+        <span class="flex items-center gap-2">
+          <x-lucide-phone class="w-5 h-5" /> (123) 456-7890
+        </span>
+        <span class="flex items-center gap-2">
+          <x-lucide-clock class="w-5 h-5" /> Mon - Fri: 9:00 - 19:00
+        </span>
+        <span class="flex items-center gap-2">
+          <x-lucide-mail class="w-5 h-5" /> info@spicnspan.com
+        </span>
       </div>
 
       <!-- Right: Social Links -->
       <div class="flex gap-4 items-center">
-        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (formerly Twitter)"
-          title="X (formerly Twitter)" class="hover:text-black transition flex items-center">
-          <x-si-x class="w-5 h-5" />
-        </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
-          class="hover:text-blue-700 transition flex items-center">
-          <x-si-facebook class="w-5 h-5" />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
-          class="hover:text-pink-500 transition flex items-center">
-          <x-si-instagram class="w-5 h-5" />
-        </a>
+        <a href="#"><x-si-x class="w-5 h-5" /></a>
+        <a href="#"><x-si-facebook class="w-5 h-5" /></a>
+        <a href="#"><x-si-instagram class="w-5 h-5" /></a>
       </div>
 
     </div>
   </div>
 
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-blue-600">{{ config('app.name') }}</div>
+  <!-- Header -->
+  <header x-data="{ open: false }" class="bg-white shadow-sm border-b border-gray-200 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4">
 
-      <nav class="hidden md:flex gap-8 font-medium">
-        <a href="#" class="hover:text-blue-600">Home</a>
-        <a href="#" class="hover:text-blue-600">Services</a>
-        <a href="#" class="hover:text-blue-600">About</a>
-        <a href="#" class="hover:text-blue-600">Contact</a>
-      </nav>
+      <!-- Top Row -->
+      <div class="flex justify-between items-center">
 
-      <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
-        Get a Quote
-      </a>
+        <div class="text-2xl font-bold text-blue-600">
+          {{ config('app.name') }}
+        </div>
+
+        <!-- Mobile Button -->
+        <button @click="open = !open" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+          aria-label="Open main menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-8 font-medium items-center">
+          <a href="{{ route('home') }}" class="hover:text-blue-600">Home</a>
+          <a href="{{ route('services') }}" class="hover:text-blue-600">Services</a>
+          <a href="{{ route('about') }}" class="hover:text-blue-600">About</a>
+          <a href="{{ route('contact') }}" class="hover:text-blue-600">Contact</a>
+
+          <!-- Desktop Quote -->
+          <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
+            Get a Quote
+          </a>
+        </nav>
+
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div x-show="open" x-transition x-cloak class="md:hidden mt-4">
+
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+
+          <!-- Navigation -->
+          <nav class="flex flex-col">
+
+            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition">
+              Home
+            </a>
+
+            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+              Services
+            </a>
+
+            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+              About
+            </a>
+
+            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+              Contact
+            </a>
+
+          </nav>
+
+          <!-- CTA Section -->
+          <div class="p-6 bg-gray-50 border-t border-gray-100">
+            <a href="#"
+              class="block w-full text-center bg-blue-600 text-white font-semibold py-3 rounded-xl shadow hover:bg-blue-700 transition">
+              Get a Quote
+            </a>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="p-6 border-t border-gray-100 bg-white">
+
+            <div class="flex flex-col gap-4 text-sm text-gray-600">
+
+              <div class="flex items-center gap-3">
+                <x-lucide-phone class="w-5 h-5 text-blue-600" />
+                <span>(123) 456-7890</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <x-lucide-clock class="w-5 h-5 text-blue-600" />
+                <span>Mon – Fri: 9:00 – 19:00</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <x-lucide-mail class="w-5 h-5 text-blue-600" />
+                <span>info@spicnspan.com</span>
+              </div>
+
+              <div class="flex gap-5 pt-2 text-gray-500">
+                <a href="#" class="hover:text-black transition">
+                  <x-si-x class="w-5 h-5" />
+                </a>
+                <a href="#" class="hover:text-blue-600 transition">
+                  <x-si-facebook class="w-5 h-5" />
+                </a>
+                <a href="#" class="hover:text-pink-500 transition">
+                  <x-si-instagram class="w-5 h-5" />
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </header>
 
