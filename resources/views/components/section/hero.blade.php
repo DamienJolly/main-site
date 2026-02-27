@@ -1,4 +1,4 @@
-<section class="relative bg-linear-to-r from-blue-700 via-blue-600 to-teal-600 text-white py-20 overflow-hidden">
+<section class="relative bg-linear-to-r from-blue-700 via-blue-600 to-teal-600 text-white py-20 overflow-hidden -mb-6">
   <div class="max-w-7xl mx-auto px-6 pb-8">
 
     <h1 class="text-4xl md:text-5xl font-bold mb-6">

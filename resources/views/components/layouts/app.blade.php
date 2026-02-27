@@ -6,27 +6,33 @@
 
 
   <!-- Desktop Top Bar -->
-  <div class="hidden md:block bg-gray-100 text-sm border-b border-gray-200 z-20">
-    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+  <div class="hidden md:block bg-gray-100 font-medium text-xs border-b border-gray-200 z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
       <!-- Left: Contact Info -->
       <div class="flex flex-wrap gap-6 items-center">
         <span class="flex items-center gap-2">
-          <x-lucide-phone class="w-5 h-5" /> (123) 456-7890
+          <x-lucide-phone class="size-4 text-blue-600" /> (123) 456-7890
         </span>
         <span class="flex items-center gap-2">
-          <x-lucide-clock class="w-5 h-5" /> Mon - Fri: 9:00 - 19:00
+          <x-lucide-clock class="size-4 text-blue-600" /> Mon - Fri: 9:00 - 19:00
         </span>
         <span class="flex items-center gap-2">
-          <x-lucide-mail class="w-5 h-5" /> info@spicnspan.com
+          <x-lucide-mail class="size-4 text-blue-600" /> info@spicnspan.com
         </span>
       </div>
 
       <!-- Right: Social Links -->
-      <div class="flex gap-4 items-center">
-        <a href="#"><x-si-x class="w-5 h-5" /></a>
-        <a href="#"><x-si-facebook class="w-5 h-5" /></a>
-        <a href="#"><x-si-instagram class="w-5 h-5" /></a>
+      <div class="flex gap-4 items-center text-gray-700">
+        <a href="#" class="hover:text-black transition">
+          <x-si-x class="size-4" />
+        </a>
+        <a href="#" class="hover:text-blue-600 transition">
+          <x-si-facebook class="size-4" />
+        </a>
+        <a href="#" class="hover:text-pink-500 transition">
+          <x-si-instagram class="size-4" />
+        </a>
       </div>
 
     </div>
@@ -39,7 +45,7 @@
       <!-- Top Row -->
       <div class="flex justify-between items-center">
 
-        <div class="text-2xl font-bold text-blue-600">
+        <div class="text-2xl font-extrabold text-blue-600">
           {{ config('app.name') }}
         </div>
 
@@ -52,14 +58,33 @@
         </button>
 
         <!-- Desktop Nav -->
-        <nav class="hidden md:flex gap-8 font-medium items-center">
-          <a href="{{ route('home') }}" class="hover:text-blue-600">Home</a>
-          <a href="{{ route('services') }}" class="hover:text-blue-600">Services</a>
-          <a href="{{ route('about') }}" class="hover:text-blue-600">About</a>
-          <a href="{{ route('contact') }}" class="hover:text-blue-600">Contact</a>
+        <nav class="hidden md:flex gap-8 font-semibold items-center text-gray-900">
+          <a href="{{ route('home') }}" @class([
+              'hover:text-blue-600',
+              'text-blue-600' => request()->routeIs('home*'),
+          ])>
+            Home
+          </a>
+          <a href="{{ route('services') }}" @class([
+              'hover:text-blue-600',
+              'text-blue-600' => request()->routeIs('services*'),
+          ])>
+            Services
+          </a>
+          <a href="{{ route('about') }}" @class([
+              'hover:text-blue-600',
+              'text-blue-600' => request()->routeIs('about*'),
+          ])>
+            About
+          </a>
+          <a href="{{ route('contact') }}" @class([
+              'hover:text-blue-600',
+              'text-blue-600' => request()->routeIs('contact*'),
+          ])>
+            Contact
+          </a>
 
-          <!-- Desktop Quote -->
-          <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
+          <a href="{{ route('contact') }}" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
             Get a Quote
           </a>
         </nav>
@@ -72,29 +97,36 @@
         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
 
           <!-- Navigation -->
-          <nav class="flex flex-col">
-
-            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition">
+          <nav class="flex flex-col font-semibold">
+            <a href="{{ route('home') }}" @class([
+                'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
+                'text-blue-600' => request()->routeIs('home*'),
+            ])">
               Home
             </a>
-
-            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+            <a href="{{ route('services') }}" @class([
+                'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
+                'text-blue-600' => request()->routeIs('services*'),
+            ])">
               Services
             </a>
-
-            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+            <a href="{{ route('about') }}" @class([
+                'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
+                'text-blue-600' => request()->routeIs('about*'),
+            ])">
               About
             </a>
-
-            <a href="#" class="px-6 py-4 font-medium hover:bg-gray-50 transition border-t border-gray-100">
+            <a href="{{ route('contact') }}" @class([
+                'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
+                'text-blue-600' => request()->routeIs('contact*'),
+            ])">
               Contact
             </a>
-
           </nav>
 
           <!-- CTA Section -->
           <div class="p-6 bg-gray-50 border-t border-gray-100">
-            <a href="#"
+            <a href="{{ route('contact') }}"
               class="block w-full text-center bg-blue-600 text-white font-semibold py-3 rounded-xl shadow hover:bg-blue-700 transition">
               Get a Quote
             </a>
@@ -120,15 +152,15 @@
                 <span>info@spicnspan.com</span>
               </div>
 
-              <div class="flex gap-5 pt-2 text-gray-500">
+              <div class="flex gap-5 pt-2 text-gray-700">
                 <a href="#" class="hover:text-black transition">
-                  <x-si-x class="w-5 h-5" />
+                  <x-si-x class="size-5" />
                 </a>
                 <a href="#" class="hover:text-blue-600 transition">
-                  <x-si-facebook class="w-5 h-5" />
+                  <x-si-facebook class="size-5" />
                 </a>
                 <a href="#" class="hover:text-pink-500 transition">
-                  <x-si-instagram class="w-5 h-5" />
+                  <x-si-instagram class="size-5" />
                 </a>
               </div>
 

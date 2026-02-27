@@ -1,4 +1,4 @@
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden -mb-20">
   <!-- Background image -->
   <div class="absolute inset-0">
     <img src="https://www.bonuscleaning.co.uk/files/rte/bonus%20cleaning%20front%20page%20full%20banner.png"
@@ -16,12 +16,12 @@
       Reliable, fast, and eco-friendly solutions for homes and offices.
     </p>
     <div class="flex gap-4">
-      <a href="#"
+      <a href="{{ route('contact') }}"
         class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition">
         Get Started
       </a>
-      <a href="#"
-        class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
+      <a href="{{ route('about') }}"
+        class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
         Learn More
       </a>
     </div>
