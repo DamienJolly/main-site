@@ -56,8 +56,8 @@
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
         <!-- Image -->
-        <img src="https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/moppers-service-1-1.jpg"
-          alt="Domestic Cleaning" class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
+        <img src="{{ asset('images/services/house-cleaning.jpg') }}" alt="Domestic Cleaning"
+          class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
@@ -85,8 +85,8 @@
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
         <!-- Image -->
-        <img src="https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/moppers-service-1-1.jpg"
-          alt="Domestic Cleaning" class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
+        <img src="{{ asset('images/services/commercial-cleaning.jpg') }}" alt="Commercial Cleaning"
+          class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
@@ -114,8 +114,8 @@
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
         <!-- Image -->
-        <img src="https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/moppers-service-1-1.jpg"
-          alt="Domestic Cleaning" class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
+        <img src="{{ asset('images/services/one-off-cleans.jpg') }}" alt="One-Off Cleans"
+          class="w-full h-96 object-cover transition duration-500 group-hover:scale-110">
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>

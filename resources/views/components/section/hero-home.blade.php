@@ -1,7 +1,7 @@
 <section class="relative overflow-hidden -mb-20">
   <!-- Background image -->
   <div class="absolute inset-0">
-    <img src="https://www.bonuscleaning.co.uk/files/rte/bonus%20cleaning%20front%20page%20full%20banner.png"
+    <img src="{{ asset('images/hero-home.jpg') }}"
       alt="Cleaning Service" class="w-full h-full object-cover">
     <!-- Gradient overlay -->
     <div class="absolute inset-0 bg-linear-to-r from-blue-700 via-blue-600 to-teal-600 opacity-70 overflow-hidden"></div>

@@ -36,8 +36,8 @@
         </div>
 
         <div class="rounded-2xl overflow-hidden shadow-xl">
-          <img src="https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/moppers-service-1-1.jpg"
-            alt="Commercial cleaning service" class="w-full h-full object-cover min-h-105">
+          <img src="{{ asset('images/services/commercial-cleaning.jpg') }}" alt="Commercial cleaning service"
+            class="w-full h-full object-cover min-h-105">
         </div>
       </div>
 

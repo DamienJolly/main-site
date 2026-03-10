@@ -3,26 +3,27 @@
     $teamMembers = [
         [
             'name' => 'Damien Colley',
-            'role' => 'CEO',
-            'photo' => 'https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/team4.jpg',
-            'bio' => 'Founder with 15 years experience.',
+            'role' => 'Founder & CEO',
+            'photo' => asset('images/team/default-man.jpg'),
+            'bio' =>
+                'Founder and CEO, passionate about delivering exceptional cleaning services and building a trusted brand.',
         ],
         [
             'name' => 'Rose Mortimer',
-            'role' => 'Operations Manager',
-            'photo' => 'https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/team4.jpg',
-            'bio' => 'Ensures projects run smoothly.',
+            'role' => 'Co-Founder & Social Media Manager',
+            'photo' => asset('images/team/default-girl.jpg'),
+            'bio' => 'Co-founder and social media strategist, managing our online presence and client engagement.',
         ],
         [
-            'name' => 'Luke Smith',
-            'role' => 'Lead Cleaner',
-            'photo' => 'https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/team4.jpg',
-            'bio' => 'Expert in residential cleaning.',
+            'name' => '[NAME]',
+            'role' => 'Cleaner',
+            'photo' => asset('images/team/default-girl.jpg'),
+            'bio' => '[BIO]', //'Dedicated cleaning specialist known for attention to detail and consistently spotless results.',
         ],
     ];
   @endphp
-  <x-section.hero title="About Us" description="Learn more about our company and values." />
+  <x-section.hero title="About Us" description="Learn more about who we are and how we began." />
   <x-section.story />
   <x-section.team :members="$teamMembers" />
-  <x-section.stats :projects="500" :satisfaction="100" :experience="7" />
+  <x-section.stats :projects="450" :satisfaction="100" :experience="now()->year - 2020" />
 </x-layouts.app>

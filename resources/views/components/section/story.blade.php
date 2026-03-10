@@ -5,27 +5,24 @@
       <div class="md:w-1/2">
         <h2 class="text-4xl font-semibold mb-6">Our Story</h2>
         <p class="text-lg text-gray-700 mb-4">
-          Founded in 2005, our company began with a simple mission: to provide reliable, professional cleaning services
-          tailored to each client’s needs. Over the years, we have grown into a trusted partner for both homes and
-          businesses, constantly innovating and refining our techniques to deliver exceptional results.
+          {{ config('app.name') }} was founded by Rose and Damien in 2020. What started as the two of us cleaning pubs
+          and commercial spaces at night while also taking on house cleans during the day quickly grew into something
+          much bigger.
         </p>
         <p class="text-lg text-gray-700 mb-4">
-          Our dedicated team combines experience with modern technology to ensure every space we touch is spotless and
-          welcoming. We take pride in building long-term relationships with our clients and maintaining the highest
-          standards of professionalism.
+          As word spread and demand increased, we realised there was an opportunity to build a cleaning agency that
+          focused not only on high standards, but also on reliability and strong communication with clients.
         </p>
         <p class="text-lg text-gray-700">
-          From small apartments to large commercial spaces, we approach every project with the same level of care and
-          attention to detail. Our commitment to reliability, innovation, and trust has earned us the confidence of
-          countless customers over the years.
+          Over time, we carefully built a friendly and hardworking team of cleaners who now support homes and businesses
+          across Suffolk and Essex.
         </p>
       </div>
 
       <!-- Story image -->
       <div class="md:w-1/2 z-20">
-        <img
-          src="https://www.slashcreative.co/themes/moppers/wp-content/uploads/2019/12/moppers-about-section.jpg?id=605"
-          alt="Our company story" class="rounded-xl shadow-lg w-full object-cover">
+        <img src="{{ asset('images/story.jpg') }}" alt="Our company story"
+          class="rounded-xl shadow-lg w-full object-cover">
       </div>
     </div>
 
