@@ -51,7 +51,7 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <a href="#"
+      <a href="{{ route('services.house-cleaning') }}"
         class="group relative block rounded-2xl overflow-hidden shadow-lg
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
@@ -65,11 +65,10 @@
         <!-- Content -->
         <div class="absolute bottom-0 p-8 text-white">
           <h3 class="text-2xl font-semibold mb-3">
-            Domestic Cleaning
+            House Cleaning
           </h3>
           <p class="text-white/80">
-            Regular or one-off home cleaning including kitchens, bathrooms,
-            and deep sanitisation.
+            Regular weekly or fortnightly cleans tailored to your home
           </p>
 
           <span
@@ -81,7 +80,7 @@
 
       </a>
 
-      <a href="#"
+      <a href="{{ route('services.commercial-cleaning') }}"
         class="group relative block rounded-2xl overflow-hidden shadow-lg
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
@@ -95,11 +94,10 @@
         <!-- Content -->
         <div class="absolute bottom-0 p-8 text-white">
           <h3 class="text-2xl font-semibold mb-3">
-            Domestic Cleaning
+            Commercial Cleaning
           </h3>
           <p class="text-white/80">
-            Regular or one-off home cleaning including kitchens, bathrooms,
-            and deep sanitisation.
+            Pubs, offices, village halls and many other commercial spaces!
           </p>
 
           <span
@@ -111,7 +109,7 @@
 
       </a>
 
-      <a href="#"
+      <a href="{{ route('services.one-off-cleans') }}"
         class="group relative block rounded-2xl overflow-hidden shadow-lg
             transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
@@ -125,11 +123,10 @@
         <!-- Content -->
         <div class="absolute bottom-0 p-8 text-white">
           <h3 class="text-2xl font-semibold mb-3">
-            Domestic Cleaning
+            Optional One-Off Cleans
           </h3>
           <p class="text-white/80">
-            Regular or one-off home cleaning including kitchens, bathrooms,
-            and deep sanitisation.
+            Available upon request
           </p>
 
           <span

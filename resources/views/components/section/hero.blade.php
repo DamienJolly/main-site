@@ -1,14 +1,14 @@
 <section class="relative bg-linear-to-r from-blue-700 via-blue-600 to-teal-600 text-white py-20 overflow-hidden -mb-6">
   <div class="max-w-7xl mx-auto px-6 pb-8">
+    <div class="w-full lg:w-1/2 md:w-2/3">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        {{ $title }}
+      </h1>
 
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-      {{ $title }}
-    </h1>
-
-    <p class="text-lg text-blue-100">
-      {{ $description }}
-    </p>
-
+      <p class="text-lg text-blue-100">
+        {{ $description }}
+      </p>
+    </div>
   </div>
 
   <!-- Decorative circles and overlay remain static -->

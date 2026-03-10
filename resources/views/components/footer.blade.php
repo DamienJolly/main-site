@@ -7,7 +7,8 @@
     <!-- Column 1: Brand -->
     <div>
       <div class="text-white font-bold text-2xl mb-4">{{ config('app.name') }}</div>
-      <p class="text-gray-400">Reliable cleaning services for homes and businesses. Fast, eco-friendly, professional.</p>
+      <p class="text-gray-400">Consistent cleaning solutions for homes and businesses across Suffolk and Essex. Friendly,
+        professional, and tailored to your needs!</p>
     </div>
 
     <!-- Column 2: Quick Links -->
@@ -24,11 +25,12 @@
     <!-- Column 3: Contact -->
     <div>
       <h4 class="text-white font-semibold mb-4">Contact</h4>
-      <p>Email: <a href="mailto:info@spicnspan.com" class="hover:text-white transition">info@spicnspan.com</a></p>
-      <p>Phone: <a href="tel:1234567890" class="hover:text-white transition">(123) 456-7890</a></p>
+      <p>Email: <a href="mailto:spicnspansuffolk@gmail.com"
+          class="hover:text-white transition">spicnspansuffolk@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447376376301" class="hover:text-white transition">+44 7376 376301</a></p>
       <p class="mt-4">Follow us:</p>
       <div class="flex gap-4 mt-2">
-        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+        <a href="https://www.facebook.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Facebook"
           class="text-gray-500 hover:text-blue-700 transition">
           <x-si-facebook class="w-6 h-6" />
         </a>

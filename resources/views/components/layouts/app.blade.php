@@ -12,13 +12,16 @@
       <!-- Left: Contact Info -->
       <div class="flex flex-wrap gap-6 items-center">
         <span class="flex items-center gap-2">
-          <x-lucide-phone class="size-4 text-blue-600" /> (123) 456-7890
+          <x-lucide-phone class="size-4 text-blue-600" />
+          <a href="tel:+447376376301" class="hover:text-gray-900 transition">+44 7376 376301</a>
         </span>
         <span class="flex items-center gap-2">
           <x-lucide-clock class="size-4 text-blue-600" /> Mon - Fri: 9:00 - 19:00
         </span>
         <span class="flex items-center gap-2">
-          <x-lucide-mail class="size-4 text-blue-600" /> info@spicnspan.com
+          <x-lucide-mail class="size-4 text-blue-600" />
+          <a href="mailto:spicnspansuffolk@gmail.com"
+            class="hover:text-gray-900 transition">spicnspansuffolk@gmail.com</a>
         </span>
       </div>
 
@@ -139,7 +142,7 @@
 
               <div class="flex items-center gap-3">
                 <x-lucide-phone class="w-5 h-5 text-blue-600" />
-                <span>(123) 456-7890</span>
+                <a href="tel:+447376376301" class="hover:text-gray-900 transition">+44 7376 376301</a>
               </div>
 
               <div class="flex items-center gap-3">
@@ -149,17 +152,21 @@
 
               <div class="flex items-center gap-3">
                 <x-lucide-mail class="w-5 h-5 text-blue-600" />
-                <span>info@spicnspan.com</span>
+                <a href="mailto:spicnspansuffolk@gmail.com"
+                  class="hover:text-gray-900 transition">spicnspansuffolk@gmail.com</a>
               </div>
 
               <div class="flex gap-5 pt-2 text-gray-700">
-                <a href="#" class="hover:text-black transition">
+                <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"
+                  class="hover:text-black transition">
                   <x-si-x class="size-5" />
                 </a>
-                <a href="#" class="hover:text-blue-600 transition">
+                <a href="https://www.facebook.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Facebook"
+                  class="hover:text-blue-600 transition">
                   <x-si-facebook class="size-5" />
                 </a>
-                <a href="#" class="hover:text-pink-500 transition">
+                <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Instagram"
+                  class="hover:text-pink-500 transition">
                   <x-si-instagram class="size-5" />
                 </a>
               </div>

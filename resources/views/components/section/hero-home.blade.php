@@ -9,21 +9,23 @@
 
   <!-- Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-6 py-32">
-    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-      Professional Cleaning, <br /> Done Right
-    </h1>
-    <p class="text-xl text-white/80 mb-8">
-      Reliable, fast, and eco-friendly solutions for homes and offices.
-    </p>
-    <div class="flex gap-4">
-      <a href="{{ route('contact') }}"
-        class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition">
-        Get Started
-      </a>
-      <a href="{{ route('about') }}"
-        class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
-        Learn More
-      </a>
+    <div class="w-full lg:w-1/2 md:w-2/3">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+        Cleaning Solutions You Can Count On
+      </h1>
+      <p class="text-xl text-white/80 mb-8">
+        Reliable, friendly, and experienced cleaning services for homes and businesses across Suffolk and Essex.
+      </p>
+      <div class="flex gap-4">
+        <a href="{{ route('contact') }}"
+          class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition">
+          Get Started
+        </a>
+        <a href="{{ route('about') }}"
+          class="border border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
+          Learn More
+        </a>
+      </div>
     </div>
   </div>
 

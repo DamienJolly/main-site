@@ -12,26 +12,29 @@
       <div class="space-y-4">
         <div class="flex items-center gap-3 text-gray-700">
           <x-lucide-phone class="w-6 h-6 text-blue-600" />
-          <span>(123) 456-7890</span>
+          <a href="tel:+447376376301" class="hover:text-gray-900 transition">+44 7376 376301</a>
         </div>
         <div class="flex items-center gap-3 text-gray-700">
           <x-lucide-mail class="w-6 h-6 text-blue-600" />
-          <span>info@spicnspan.com</span>
+          <a href="mailto:spicnspansuffolk@gmail.com"
+            class="hover:text-gray-900 transition">spicnspansuffolk@gmail.com</a>
         </div>
-        <div class="flex items-center gap-3 text-gray-700">
+        {{-- <div class="flex items-center gap-3 text-gray-700">
           <x-lucide-map-pin class="w-6 h-6 text-blue-600" />
-          <span>123 Cleaning Street, City, Country</span>
-        </div>
+          <span>Nissen Cottage, Brick Kiln Lane, Suffolk, IP12 2PB</span>
+        </div> --}}
       </div>
 
       <div class="flex gap-4 pt-4">
-        <a href="#" class="hover:text-black transition">
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="hover:text-black transition">
           <x-si-x class="w-6 h-6" />
         </a>
-        <a href="#" class="hover:text-blue-600 transition">
+        <a href="https://www.facebook.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Facebook"
+          class="hover:text-blue-600 transition">
           <x-si-facebook class="w-6 h-6" />
         </a>
-        <a href="#" class="hover:text-pink-500 transition">
+        <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Instagram"
+          class="hover:text-pink-500 transition">
           <x-si-instagram class="w-6 h-6" />
         </a>
       </div>

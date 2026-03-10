@@ -16,4 +16,12 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_services_pages_return_successful_responses(): void
+    {
+        $this->get('/services')->assertStatus(200);
+        $this->get('/services/house-cleaning')->assertStatus(200);
+        $this->get('/services/commercial-cleaning')->assertStatus(200);
+        $this->get('/services/one-off-cleans')->assertStatus(200);
+    }
 }

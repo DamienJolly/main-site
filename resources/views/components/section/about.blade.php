@@ -6,15 +6,15 @@
       <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
         About Us
       </h2>
-      <p class="text-blue-600 font-semibold mb-6">Delivering Spotless Spaces Since 2018</p>
+      <p class="text-blue-600 font-semibold mb-6">Delivering Spotless Spaces Since 2020</p>
       <p class="text-gray-700 mb-4">
-        At {{ config('app.name') }}, we are dedicated to providing professional, eco-friendly cleaning solutions for
-        homes and offices.
-        Our experienced team focuses on attention to detail, reliability, and customer satisfaction.
+        Rose & Damien started out cleaning homes and businesses themselves, and have since grown into a trusted agency
+        with a friendly, reliable team of cleaners serving Suffolk and Essex
       </p>
       <p class="text-gray-700 mb-6">
-        From routine cleaning to specialized deep-clean services, we ensure every space we touch is spotless, safe, and
-        welcoming. Our mission is simple: make your environment shine while saving you time and effort.
+        Every cleaner we work with is fully insured, experienced, and personally vetted - so you can relax knowing your
+        space is in capable hands. We pride ourselves on clear, friendly communication and a flexible approach to every
+        clean
       </p>
       <a href="{{ route('about') }}"
         class="inline-flex items-center px-6 py-3 rounded-full
