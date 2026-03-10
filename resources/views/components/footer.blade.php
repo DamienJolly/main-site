@@ -15,10 +15,21 @@
     <div>
       <h4 class="text-white font-semibold mb-4">Quick Links</h4>
       <ul class="space-y-2">
-        <li><a href="#" class="hover:text-white transition">Home</a></li>
-        <li><a href="#" class="hover:text-white transition">Services</a></li>
-        <li><a href="#" class="hover:text-white transition">About</a></li>
-        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        <li><a href="{{ route('home') }}" class="hover:text-white transition">Home</a></li>
+        <li>
+          <a href="{{ route('services') }}" class="hover:text-white transition">Services</a>
+          <ul class="mt-2 ml-4 space-y-1 text-sm">
+            <li><a href="{{ route('services') }}" class="hover:text-white transition">All Services</a></li>
+            <li><a href="{{ route('services.house-cleaning') }}" class="hover:text-white transition">House Cleaning</a>
+            </li>
+            <li><a href="{{ route('services.commercial-cleaning') }}" class="hover:text-white transition">Commercial
+                Cleaning</a></li>
+            <li><a href="{{ route('services.one-off-cleans') }}" class="hover:text-white transition">On-Off Cleans</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="{{ route('about') }}" class="hover:text-white transition">About</a></li>
+        <li><a href="{{ route('contact') }}" class="hover:text-white transition">Contact</a></li>
       </ul>
     </div>
 

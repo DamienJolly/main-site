@@ -42,15 +42,15 @@
   </div>
 
   <!-- Header -->
-  <header x-data="{ open: false }" class="bg-white shadow-sm border-b border-gray-200 relative z-10">
+  <header x-data="{ open: false, servicesOpen: false }" class="bg-white shadow-sm border-b border-gray-200 relative z-20">
     <div class="max-w-7xl mx-auto px-6 py-4">
 
       <!-- Top Row -->
       <div class="flex justify-between items-center">
 
-        <div class="text-2xl font-extrabold text-blue-600">
+        <a href="{{ route('home') }}" class="text-2xl font-extrabold text-blue-600">
           {{ config('app.name') }}
-        </div>
+        </a>
 
         <!-- Mobile Button -->
         <button @click="open = !open" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
@@ -68,12 +68,47 @@
           ])>
             Home
           </a>
-          <a href="{{ route('services') }}" @class([
-              'hover:text-blue-600',
-              'text-blue-600' => request()->routeIs('services*'),
-          ])>
-            Services
-          </a>
+          <div class="relative group">
+
+            <button type="button" @class([
+                'inline-flex items-center gap-1 hover:text-blue-600 cursor-pointer',
+                'text-blue-600' => request()->routeIs('services*'),
+            ]) aria-haspopup="true">
+              Services
+              <x-lucide-chevron-down class="size-4 transition-transform group-hover:rotate-180" />
+            </button>
+
+            <div
+              class="absolute left-0 top-full pt-3 w-56 opacity-0 invisible 
+              group-hover:opacity-100 group-hover:visible
+              transition-all duration-200">
+
+              <div class="rounded-xl border border-gray-200 bg-white shadow-lg py-2">
+
+                <a href="{{ route('services') }}"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                  All Services
+                </a>
+
+                <a href="{{ route('services.house-cleaning') }}"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                  House Cleaning
+                </a>
+
+                <a href="{{ route('services.commercial-cleaning') }}"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                  Commercial Cleaning
+                </a>
+
+                <a href="{{ route('services.one-off-cleans') }}"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">
+                  One-Off Cleans
+                </a>
+
+              </div>
+            </div>
+
+          </div>
           <a href="{{ route('about') }}" @class([
               'hover:text-blue-600',
               'text-blue-600' => request()->routeIs('about*'),
@@ -87,7 +122,8 @@
             Contact
           </a>
 
-          <a href="{{ route('contact') }}" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
+          <a href="{{ route('contact') }}"
+            class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700">
             Get a Quote
           </a>
         </nav>
@@ -107,12 +143,28 @@
             ])">
               Home
             </a>
-            <a href="{{ route('services') }}" @class([
-                'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
-                'text-blue-600' => request()->routeIs('services*'),
-            ])">
-              Services
-            </a>
+            <div class="border-y border-gray-100" x-data="{ mobileServicesOpen: false }">
+              <button @click="mobileServicesOpen = !mobileServicesOpen"
+                class="w-full flex items-center justify-between px-6 py-4 font-semibold hover:bg-gray-50 transition"
+                :class="{ 'text-blue-600': {{ request()->routeIs('services*') ? 'true' : 'false' }} }" type="button">
+                <span>Services</span>
+                <x-lucide-chevron-down class="size-4" x-bind:class="{ 'rotate-180': mobileServicesOpen }" />
+              </button>
+
+              <div x-show="mobileServicesOpen" x-transition x-cloak class="pb-2">
+                <a href="{{ route('services') }}"
+                  class="block pl-10 pr-6 py-2 text-sm hover:text-blue-600 hover:bg-gray-50 transition">All Services</a>
+                <a href="{{ route('services.house-cleaning') }}"
+                  class="block pl-10 pr-6 py-2 text-sm hover:text-blue-600 hover:bg-gray-50 transition">House
+                  Cleaning</a>
+                <a href="{{ route('services.commercial-cleaning') }}"
+                  class="block pl-10 pr-6 py-2 text-sm hover:text-blue-600 hover:bg-gray-50 transition">Commercial
+                  Cleaning</a>
+                <a href="{{ route('services.one-off-cleans') }}"
+                  class="block pl-10 pr-6 py-2 text-sm hover:text-blue-600 hover:bg-gray-50 transition">On-Off
+                  Cleans</a>
+              </div>
+            </div>
             <a href="{{ route('about') }}" @class([
                 'hover:text-blue-600 px-6 py-4 hover:bg-gray-50 transition',
                 'text-blue-600' => request()->routeIs('about*'),
@@ -165,8 +217,8 @@
                   class="hover:text-blue-600 transition">
                   <x-si-facebook class="size-5" />
                 </a>
-                <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Instagram"
-                  class="hover:text-pink-500 transition">
+                <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener"
+                  aria-label="Instagram" class="hover:text-pink-500 transition">
                   <x-si-instagram class="size-5" />
                 </a>
               </div>
