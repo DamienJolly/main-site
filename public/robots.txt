@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /storage/
+Disallow: /.env
+
+Sitemap: https://spicnspansuffolk.co.uk/sitemap.xml

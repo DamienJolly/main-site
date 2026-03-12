@@ -9,3 +9,7 @@ Route::view('/services/commercial-cleaning', 'services.commercial-cleaning')->na
 Route::view('/services/one-off-cleans', 'services.one-off-cleans')->name('services.one-off-cleans');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
+
+Route::get('/sitemap.xml', function () {
+    return response()->view('sitemap')->header('Content-Type', 'application/xml');
+})->name('sitemap');

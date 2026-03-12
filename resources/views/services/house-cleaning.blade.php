@@ -1,4 +1,5 @@
-<x-layouts.app>
+<x-layouts.app title="House Cleaning in Suffolk"
+  description="Professional, reliable house cleaning in Suffolk tailored to your home and routine. Spic N Span covers kitchens, bathrooms, living areas, and more – book your cleaner today.">
   <x-section.hero title="House Cleaning"
     description="Detailed, reliable house cleaning tailored to your routine, priorities, and home." />
 

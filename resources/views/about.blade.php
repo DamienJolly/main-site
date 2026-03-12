@@ -1,4 +1,5 @@
-<x-layouts.app>
+<x-layouts.app title="About Us"
+  description="Learn about Spic N Span – a trusted local cleaning company serving Suffolk since 2020. Meet the team behind our professional, reliable cleaning services.">
   @php
     $teamMembers = [
         [

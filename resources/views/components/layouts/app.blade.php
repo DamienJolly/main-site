@@ -1,8 +1,14 @@
 @props([
     'heading' => null,
+    'title' => null,
+    'description' => null,
+    'canonical' => null,
+    'ogImage' => null,
+    'robots' => 'index, follow',
 ])
 
-<x-layouts.base {{ $attributes }}>
+<x-layouts.base :title="$title" :description="$description" :canonical="$canonical" :ogImage="$ogImage" :robots="$robots"
+  {{ $attributes }}>
 
 
   <!-- Desktop Top Bar -->
