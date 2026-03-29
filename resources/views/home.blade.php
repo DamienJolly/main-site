@@ -1,5 +1,5 @@
-<x-layouts.app title="Professional Cleaning Services in Suffolk"
-  description="Spic N Span provides professional house cleaning, commercial cleaning, and one-off cleans across Suffolk, UK. Reliable, thorough, and tailored to your home or business.">
+<x-layouts.app title="Cleaning Solutions Suffolk | Professional Office & Home Cleaning"
+  description="Spic N Span Suffolk offers expert cleaning solutions for homes and offices. Office cleaning Suffolk, house cleaning, and one-off cleans by trusted local professionals.">
   <x-section.hero-home />
   <x-section.about />
   <x-section.how />
