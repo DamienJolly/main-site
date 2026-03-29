@@ -1,5 +1,5 @@
-<x-layouts.app title="One-Off Cleans in Suffolk"
-  description="Need a thorough one-time clean? Spic N Span offers one-off cleans for homes and businesses across Suffolk – ideal for seasonal resets, end-of-tenancy, or pre-event preparation.">
+<x-layouts.app title="One-Off Cleans Suffolk & Essex"
+  description="Need a thorough one-time clean? Spic N Span offers one-off cleans for homes and businesses across Suffolk and Essex – ideal for seasonal resets, end-of-tenancy, or pre-event preparation.">
   <x-section.hero title="Optional One-Off Cleans"
     description="Thorough one-off cleans when you need a reset, seasonal refresh, or pre-event prep." />
 
