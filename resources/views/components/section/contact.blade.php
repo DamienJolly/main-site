@@ -26,17 +26,17 @@
       </div>
 
       <div class="flex gap-4 pt-4">
-        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="hover:text-black transition">
+        {{-- <a href="https://x.com" target="_blank" rel="noopener" aria-label="X" class="hover:text-black transition">
           <x-si-x class="w-6 h-6" />
-        </a>
+        </a> --}}
         <a href="https://www.facebook.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Facebook"
           class="hover:text-blue-600 transition">
           <x-si-facebook class="w-6 h-6" />
         </a>
-        <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Instagram"
+        {{-- <a href="https://www.instagram.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Instagram"
           class="hover:text-pink-500 transition">
           <x-si-instagram class="w-6 h-6" />
-        </a>
+        </a> --}}
       </div>
     </div>
 

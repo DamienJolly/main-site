@@ -45,14 +45,14 @@
           class="text-gray-500 hover:text-blue-700 transition">
           <x-si-facebook class="w-6 h-6" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+        {{-- <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
           class="text-gray-500 hover:text-pink-500 transition">
           <x-si-instagram class="w-6 h-6" />
-        </a>
-        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"
+        </a> --}}
+        {{-- <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"
           class="text-gray-500 hover:text-white transition">
           <x-si-x class="w-6 h-6" />
-        </a>
+        </a> --}}
       </div>
     </div>
   </div>

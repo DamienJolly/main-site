@@ -33,15 +33,16 @@
 
       <!-- Right: Social Links -->
       <div class="flex gap-4 items-center text-gray-700">
-        <a href="#" class="hover:text-black transition">
+        {{-- <a href="#" class="hover:text-black transition">
           <x-si-x class="size-4" />
-        </a>
-        <a href="#" class="hover:text-blue-600 transition">
+        </a> --}}
+        <a href="https://www.facebook.com/spicnspanuk/" target="_blank" rel="noopener" aria-label="Facebook"
+          class="hover:text-blue-600 transition">
           <x-si-facebook class="size-4" />
         </a>
-        <a href="#" class="hover:text-pink-500 transition">
+        {{-- <a href="#" class="hover:text-pink-500 transition">
           <x-si-instagram class="size-4" />
-        </a>
+        </a> --}}
       </div>
 
     </div>
