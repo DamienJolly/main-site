@@ -7,18 +7,18 @@
           'content' => 'Excellent service and would definitely recommend. Our cleaner is superb.',
       ],
       [
-          'name' => 'Amanda P.',
+          'name' => 'Sarah B.',
           'role' => 'Homeowner',
-          'photo' => asset('images/team/default-man.jpg'),
+          'photo' => asset('images/team/default-girl.jpg'),
           'content' =>
-              'I would highly recommend this company. Very efficient and reliable and most importantly, friendly. Thank you!',
+              'Rose has been cleaning at our home for many months now on a fortnightly basis. She is very reliable and is  always willing to do extra if needed. Coming home after she has been is lovely! Having everything spotless and in its place 🥰 I would personally highly recommend.',
       ],
       [
-          'name' => 'Adeline B.',
-          'role' => 'Homeowner',
+          'name' => 'Box Worx Ltd.',
+          'role' => 'Business Owner',
           'photo' => asset('images/team/default-man.jpg'),
           'content' =>
-              'Great service, super flexible, accommodating and polite. It is so nice to go home to a clean house after work, highly recommend',
+              'We are extremely pleased with the cleaning services provided at our workshop, mess room, and office areas. The team consistently maintains a high standard of cleanliness and organisation across all spaces, creating a safe and pleasant environment for everyone who works here',
       ],
   ];
 @endphp
