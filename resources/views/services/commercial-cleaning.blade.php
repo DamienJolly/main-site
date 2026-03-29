@@ -1,7 +1,7 @@
-<x-layouts.app title="Office Cleaning Suffolk | Commercial Cleaning Solutions"
-  description="Office cleaning Suffolk by Spic N Span. Commercial cleaning solutions for offices, pubs, halls, and business premises across Suffolk. Trusted, thorough, and flexible.">
-  <x-section.hero title="Office Cleaning Suffolk"
-    description="Expert office cleaning Suffolk and commercial cleaning solutions for your business, workspace, or venue." />
+<x-layouts.app title="Commercial Cleaning Suffolk & Essex | Business Cleaning Solutions"
+  description="Commercial cleaning Suffolk & Essex by Spic N Span. Cleaning solutions for offices, pubs, halls, and all business premises across Suffolk and Essex. Trusted, thorough, and flexible.">
+  <x-section.hero title="Commercial Cleaning Suffolk & Essex"
+    description="Expert commercial cleaning Suffolk & Essex and business cleaning solutions for your workspace, venue, or premises." />
 
   <section class="py-20">
     <div class="max-w-7xl mx-auto px-6">
@@ -13,7 +13,7 @@
           </h2>
           <p class="text-gray-600 text-lg mb-8">
             We provide consistent commercial cleaning with minimal disruption to your team, customers, and daily
-            operations.
+            operations. Serving businesses across Suffolk and Essex.
           </p>
 
           <div class="space-y-4">
