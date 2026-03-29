@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
 
 class ContactController extends Controller
@@ -25,9 +24,6 @@ class ContactController extends Controller
 
         // Set throttle for 24 hours
         cache()->put($cacheKey, true, now()->addDay());
-
-        // Log the message
-        Log::info('Contact form submitted', $validated);
 
         // Send email to business
         \Mail::to('spicnspansuffolk@gmail.com')->send(new \App\Mail\ContactFormMail($validated));
